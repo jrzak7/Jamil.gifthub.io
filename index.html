@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Work Journey as a Trainer</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    background:linear-gradient(rgba(15,23,42,.8),rgba(15,23,42,.8)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.hero button{
+    padding:15px 35px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    background:#0ea5e9;
+}
+
+/* Sections */
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:50px;
+    color:#0f172a;
+}
+
+/* About */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+}
+
+.about p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Cards */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0ea5e9;
+    margin-bottom:15px;
+}
+
+/* Timeline */
+
+.timeline{
+    position:relative;
+    margin:auto;
+    max-width:900px;
+}
+
+.timeline::after{
+    content:'';
+    position:absolute;
+    width:4px;
+    background:#38bdf8;
+    top:0;
+    bottom:0;
+    left:50%;
+    margin-left:-2px;
+}
+
+.container{
+    padding:15px 40px;
+    position:relative;
+    width:50%;
+}
+
+.left{
+    left:0;
+}
+
+.right{
+    left:50%;
+}
+
+.content{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* Stats */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.stat{
+    background:#0f172a;
+    color:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.stat h2{
+    color:#38bdf8;
+    font-size:45px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:35px;
+    margin-top:40px;
+}
+
+@media(max-width:900px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.timeline::after{
+left:25px;
+}
+
+.container{
+width:100%;
+padding-left:70px;
+padding-right:20px;
+}
+
+.left,.right{
+left:0;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<h2>My Journey</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#timeline">Journey</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div>
+
+<h1>My Work Journey as a Trainer</h1>
+
+<p>Empowering People • Developing Talent • Building Future Leaders</p>
+
+<button>Explore My Journey</button>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=80">
+
+<div>
+
+<p>
+
+Hello! I'm a passionate trainer dedicated to developing people through
+continuous learning and coaching.
+
+Throughout my career, I've had the opportunity to conduct onboarding
+programs, product knowledge sessions, soft skills training,
+quality improvement initiatives, coaching sessions, and leadership
+development.
+
+My mission is simple:
+<b>Help individuals unlock their potential and perform with confidence.</b>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Timeline -->
+
+<section id="timeline">
+
+<h2 class="title">Career Journey</h2>
+
+<div class="timeline">
+
+<div class="container left">
+<div class="content">
+<h3>Customer Service Agent</h3>
+<p>Started my journey by handling customer interactions and developing communication skills.</p>
+</div>
+</div>
+
+<div class="container right">
+<div class="content">
+<h3>Subject Matter Expert (SME)</h3>
+<p>Provided floor support, coaching, and product expertise to new agents.</p>
+</div>
+</div>
+
+<div class="container left">
+<div class="content">
+<h3>Acting Trainer</h3>
+<p>Conducted onboarding sessions and facilitated classroom learning.</p>
+</div>
+</div>
+
+<div class="container right">
+<div class="content">
+<h3>Trainer</h3>
+<p>Designed learning materials, assessments, coaching plans, and performance improvement programs.</p>
+</div>
+</div>
+
+<div class="container left">
+<div class="content">
+<h3>Senior Trainer</h3>
+<p>Leading training strategies, learning initiatives, stakeholder engagement, and leadership development.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- Skills -->
+
+<section id="skills">
+
+<h2 class="title">Professional Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Training Delivery</h3>
+<p>Interactive classroom and virtual learning sessions.</p>
+</div>
+
+<div class="card">
+<h3>Instructional Design</h3>
+<p>Develop engaging learning materials and assessments.</p>
+</div>
+
+<div class="card">
+<h3>Coaching</h3>
+<p>Performance coaching using quality insights.</p>
+</div>
+
+<div class="card">
+<h3>Leadership</h3>
+<p>Mentoring trainers and supporting operational excellence.</p>
+</div>
+
+<div class="card">
+<h3>Presentation</h3>
+<p>Professional presentations for management and stakeholders.</p>
+</div>
+
+<div class="card">
+<h3>Project Management</h3>
+<p>Managing learning projects from planning to execution.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section id="projects">
+
+<h2 class="title">Training Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>New Hire Onboarding</h3>
+<p>Created structured onboarding programs to improve readiness and confidence.</p>
+</div>
+
+<div class="card">
+<h3>Monthly Assessments</h3>
+<p>Designed assessments and monitored learning performance.</p>
+</div>
+
+<div class="card">
+<h3>Knowledge Management</h3>
+<p>Managed internal knowledge portals and learning documentation.</p>
+</div>
+
+<div class="card">
+<h3>Quality Improvement</h3>
+<p>Implemented coaching initiatives to improve service quality.</p>
+</div>
+
+<div class="card">
+<h3>Leadership Workshops</h3>
+<p>Facilitated leadership and management development sessions.</p>
+</div>
+
+<div class="card">
+<h3>Microlearning</h3>
+<p>Created infographics and bite-sized learning content.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Statistics -->
+
+<section>
+
+<h2 class="title">Career Highlights</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>10+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h2>100+</h2>
+<p>Training Sessions</p>
+</div>
+
+<div class="stat">
+<h2>1000+</h2>
+<p>Employees Trained</p>
+</div>
+
+<div class="stat">
+<h2>20+</h2>
+<p>Learning Projects</p>
+</div>
+
+</div>
+
+</section>
+
+<footer id="contact">
+
+<h2>Thank You</h2>
+
+<p>My Work Journey as a Trainer</p>
+
+<p>Email: trainer@email.com</p>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
